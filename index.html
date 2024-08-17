@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Systems Course</title>
+    <style>
+        /* Embedded CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .accordion {
+            border-top: 1px solid #ddd;
+        }
+
+        .accordion-item {
+            border-bottom: 1px solid #ddd;
+        }
+
+        .accordion-header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 15px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .accordion-content {
+            display: none;
+            padding: 15px;
+            background-color: #f9f9f9;
+        }
+
+        .accordion-content ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        .accordion-content ul ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .accordion-content li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Embedded Systems Course Outline</h1>
+        <div class="accordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" onclick="toggleAccordion(this)">Module 1: Introduction to Embedded Systems</h2>
+                <div class="accordion-content">
+                    <ul>
+                        <li><strong>What is Embedded Systems?</strong>
+                            <ul>
+                                <li>Definition and examples of embedded systems.</li>
+                                <li>Difference between general-purpose computing and embedded systems.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Hardware and Software in Embedded Systems</strong>
+                            <ul>
+                                <li>Overview of hardware components: microcontrollers, sensors, actuators.</li>
+                                <li>Overview of software components: firmware, operating systems, and application software.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" onclick="toggleAccordion(this)">Module 2: Microcontrollers and Microprocessors</h2>
+                <div class="accordion-content">
+                    <ul>
+                        <li><strong>Microcontroller vs. Microprocessor</strong>
+                            <ul>
+                                <li>Differences and use cases.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Microcontroller Architecture</strong>
+                            <ul>
+                                <li>Components: CPU, memory, peripherals.</li>
+                                <li>Understanding common architectures (e.g., Harvard, von Neumann).</li>
+                            </ul>
+                        </li>
+                        <li><strong>Popular Microcontrollers</strong>
+                            <ul>
+                                <li>Overview of commonly used microcontrollers like AVR, ARM Cortex, PIC.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" onclick="toggleAccordion(this)">Module 3: Introduction to Arduino and ESP32</h2>
+                <div class="accordion-content">
+                    <ul>
+                        <li><strong>Introduction to Arduino</strong>
+                            <ul>
+                                <li>What is Arduino? Overview of the Arduino platform.</li>
+                                <li>Getting started with Arduino Uno.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Introduction to ESP32</strong>
+                            <ul>
+                                <li>What is ESP32? Features and comparison with Arduino.</li>
+                                <li>Setting up the ESP32 environment.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" onclick="toggleAccordion(this)">Module 4: Communication Protocols</h2>
+                <div class="accordion-content">
+                    <ul>
+                        <li><strong>Types of Communication in Arduino and ESP32</strong>
+                            <ul>
+                                <li>Serial Communication: UART.</li>
+                                <li>I2C Communication.</li>
+                                <li>SPI Communication.</li>
+                                <li>Wireless Communication: Wi-Fi, Bluetooth, LoRa.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Detailed Study of Protocols</strong>
+                            <ul>
+                                <li><strong>UART</strong>: Basics, use cases, and how to implement.</li>
+                                <li><strong>I2C</strong>: Master-slave architecture, address selection, implementation.</li>
+                                <li><strong>SPI</strong>: Full-duplex communication, clock polarity, and phase.</li>
+                                <li><strong>GPIO (General Purpose Input/Output)</strong>: Pin modes, digital input/output, analog input.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" onclick="toggleAccordion(this)">Module 5: Networking Protocols</h2>
+                <div class="accordion-content">
+                    <ul>
+                        <li><strong>HTTP and MQTT</strong>
+                            <ul>
+                                <li>HTTP: Basics of the Hypertext Transfer Protocol, use in embedded systems.</li>
+                                <li>MQTT: Basics of the Message Queuing Telemetry Transport, its application in IoT.</li>
+                            </ul>
+                        </li>
+                        <li><strong>GSM and GPS</strong>
+                            <ul>
+                                <li>Overview of GSM modules and how to interface with microcontrollers.</li>
+                                <li>GPS: Basics and interfacing with Arduino/ESP32.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" onclick="toggleAccordion(this)">Module 6: Real-Time Applications</h2>
+                <div class="accordion-content">
+                    <ul>
+                        <li><strong>RTC (Real-Time Clock)</strong>
+                            <ul>
+                                <li>Importance of RTC, how to interface and use in projects.</li>
+                            </ul>
+                        </li>
+                        <li><strong>RS485 Communication</strong>
+                            <ul>
+                                <li>Basics of RS485, use in industrial applications.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Wi-Fi and LoRa (E32)</strong>
+                            <ul>
+                                <li>Wireless communication using Wi-Fi.</li>
+                                <li>Introduction to LoRa (Long Range) communication.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" onclick="toggleAccordion(this)">Module 7: Programming and Development</h2>
+                <div class="accordion-content">
+                    <ul>
+                        <li><strong>Programming with Arduino IDE</strong>
+                            <ul>
+                                <li>Writing and uploading code to Arduino/ESP32.</li>
+                                <li>Using libraries and debugging.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Advanced Topics</strong>
+                            <ul>
+                                <li>Creating complex projects involving multiple sensors, actuators, and communication protocols.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" onclick="toggleAccordion(this)">Advanced Module: Future Directions</h2>
+                <div class="accordion-content">
+                    <ul>
+                        <li><strong>Introduction to Raspberry Pi</strong>
+                            <ul>
+                                <li>Overview and comparison with microcontrollers.</li>
+                                <li>Setting up and using Raspberry Pi for embedded applications.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Introduction to Linux for Embedded Systems</strong>
+                            <ul>
+                                <li>Basics of Linux, using Linux on Raspberry Pi.</li>
+                                <li>Developing and deploying embedded applications on Linux.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Embedded JavaScript
+        function toggleAccordion(element) {
+            var content = element.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
